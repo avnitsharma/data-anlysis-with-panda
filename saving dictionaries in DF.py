@@ -11,6 +11,8 @@ avnit =  {'Boom':[3,2,3,4,5,6,546],
 
 #putting the dictionary into the dataframe
 df = pd.DataFrame(web_stats)
+#setting up new index
+df.set_index('Day', inplace=True)
 print (df.head())
 #using head will give top entries where as tail will give end entries
 df = pd.DataFrame(avnit)
